@@ -1,0 +1,61 @@
+
+
+
+
+
+.welcome-container {
+  height: 00%;
+  background: #171941; /* Match the background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 300px;
+}
+
+.title {
+  font-size: 46px; /* Match the title size */
+  color: #4a90e2; /* Match the title color */
+  font-family: 'Poppins', sans-serif; /* Use the specified font */
+  margin: 10px; /* Add margin for spacing */
+}
+
+.subtitle {
+  font-size: 20px; /* Match the subtitle size */
+  color: #333; /* Match the subtitle color */
+  margin-bottom: 30px; /* Adjust margin for spacing */
+}
+
+.game-list {
+  width: 800px; /* Match the width of the container */
+  display: flex; /* Change to flex for a single card */
+  justify-content: center; /* Center the card */
+}
+
+.game-card {
+  background-color: #ffffff; /* Match the card background */
+  padding: 30px; /* Match the padding */
+  border-radius: 15px; /* Match the border radius */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); /* Match the box shadow */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100%; /* Make the card take full width */
+  max-width: 600px; /* Limit the max width */
+  text-align: center; /* Center text inside the card */
+}
+
+.game-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.game-card h2 {
+  font-size: 34px; /* Adjust title size */
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Use the specified font */
+}
+
+.game-card p {
+  font-size: 16px; /* Adjust description size */
+  color: #1963ec; /* Match the description color */
+  font-family: 'Poppins', sans-serif; /* Use the specified font */
+}

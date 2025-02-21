@@ -1,0 +1,62 @@
+.fill-in-the-blanks {
+  text-align: center;
+  padding: 100px; /* Increased padding for consistency */
+  background-color: #ccd9ff; /* Match the card background */
+  border-radius: 15px; /* Match the border radius */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); /* Match the box shadow */
+  margin: 20px auto; /* Center the component with margin */
+  width: 800px; /* Match the width of the container */
+}
+
+.options {
+  display: flex; /* Use flexbox for button layout */
+  justify-content: center; /* Center the buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap if needed */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+.options button {
+  margin: 5px;
+  padding: 12px 25px; /* Adjust padding for better spacing */
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background: #f4a261; /* Match the button background */
+  color: white;
+  transition: background 0.3s; /* Smooth transition for background */
+  font-family: 'Poppins', sans-serif; /* Use the specified font */
+}
+
+.options button:hover {
+  background: #e76f51; /* Match hover color */
+}
+
+.selected {
+  background: #264653 !important; /* Match selected button color */
+}
+
+.feedback {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333; /* Match feedback text color */
+  font-family: 'Poppins', sans-serif; /* Use the specified font */
+}
+
+.next-btn {
+  margin-top: 20px; /* Adjust margin for spacing */
+  padding: 12px 25px; /* Adjust padding for better spacing */
+  font-size: 18px;
+  background: #2a9d8f; /* Match the next button background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s; /* Smooth transition for background */
+  font-family: 'Poppins', sans-serif; /* Use the specified font */
+}
+
+.next-btn:hover {
+  background: #1d6f6b; /* Match hover color */
+}

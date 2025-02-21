@@ -1,0 +1,61 @@
+.memory-match {
+    text-align: center;
+  }
+  
+  .start-screen, .end-screen {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  .start-screen h1, .end-screen h1 {
+    color: #007bff;
+  }
+  
+  .start-screen button, .end-screen button {
+    margin: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .start-screen button.selected {
+    background-color: #28a745;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .flipped {
+    background-color: #28a745;
+  }
+  
