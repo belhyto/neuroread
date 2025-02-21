@@ -41,7 +41,6 @@ const difficultyLevels = {
 };
 
 function FillInTheBlanks({ goToWelcomeScreen }) {
-  const [gameStarted, setGameStarted] = useState(true); // Directly start the game
   const [gameEnded, setGameEnded] = useState(false);
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -49,7 +48,7 @@ function FillInTheBlanks({ goToWelcomeScreen }) {
   const [feedback, setFeedback] = useState("");
   const [correctAnswer, setCorrectAnswer] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
-  const [difficulty, setDifficulty] = useState("easy");
+  const [difficulty] = useState("easy"); // Keep difficulty as a constant
 
   useEffect(() => {
     const shuffledQuestions = [...difficultyLevels[difficulty]].sort(() => Math.random() - 0.5).slice(0, 10);
@@ -67,12 +66,6 @@ function FillInTheBlanks({ goToWelcomeScreen }) {
     }, 1000);
     return () => clearInterval(timer);
   }, [difficulty]);
-
-  useEffect(() => {
-    if (gameEnded) {
-      setGameStarted(false);
-    }
-  }, [gameEnded]);
 
   const handleAnswer = (answer) => {
     if (answer === questions[currentQuestionIndex].correct && !correctAnswer) {
@@ -95,7 +88,6 @@ function FillInTheBlanks({ goToWelcomeScreen }) {
   };
 
   const restartGame = () => {
-    setGameStarted(false);
     setGameEnded(false);
     setElapsedTime(0);
   };
